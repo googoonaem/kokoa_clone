@@ -1,2 +1,13 @@
 Kokoa clone
-using node_js
+
+Realtime Chat with SocketIO, express and Nodejs 
+
+# To Do
+
+- [ ] Server
+- [ ] Pug
+- [ ] Static
+- [ ] SocketIO
+- [ ] Chat
+- [ ] login/logout
+

@@ -1,13 +1,26 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="/public/css/style.css")
-        title Home
-    body  이 틀도 복붙안하는 방법이 있었는데.. 머였지?
-        include partials/status-bar
-        include partials/welcome
-        script(src="/public/js/app.js")
-        script(src="https://kit.fontawesome.com/9252753edf.js", crossorigin="anonymous")
+extends base
+block content
+    header.screen-header
+        h1.screen-header__title Chats
+        .screen-header__icons
+            span
+                i.fas.fa-search.fa-lg
+            span
+                i.far.fa-comment-dots.fa-lg
+            span
+                i.fas.fa-music.fa-lg
+            span
+                i.fas.fa-cog.fa-lg
+
+    main.main-screen
+        a(href="chat/GOOGOO12")
+            .user-component
+                .user-component__column
+                    img.user-component__avatar(src='public/images/3727908.png')
+                    .user-component__text
+                        h4.user-component__title GOOGOO12
+                        h6.user-component__subtitle Please Check My Cocoa Account Info.
+                .user-component__column
+                    span.user-component__time 22:10
+                    .badge 1
+    include partials/nav

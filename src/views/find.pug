@@ -1,0 +1,47 @@
+extends base
+block content
+    header.screen-header
+        h1.screen-header__title Find
+        .screen-header__icons
+            span
+                i.fas.fa-search.fa-lg
+            span
+                i.fas.fa-cog.fa-lg
+
+    main.main-screen
+        .icon-row
+            each icon in ['fa-qrcode', 'fa-address-book', 'fa-fingerprint', 'fa-envelope']
+                //- 반복문을 통해 아이콘과 텍스트 출력
+                .icon-row__icon
+                    i(class=`fas ${icon}`)
+                    span
+                    //- 아이콘에 따른 텍스트 출력
+                    | #{icon === 'fa-qrcode' ? 'QR Code' : icon === 'fa-address-book' ? 'Add by Contacts' : icon === 'fa-fingerprint' ? 'Add by Id' : 'Invite'}
+
+        .recommended-friends
+            h6.recommended-friends__title Recommended Friends
+            span You have no recommended friends.
+
+        .open-caht
+            .open-chat__header
+                h4.open-chat__title Open Chat
+                span Go to Openchat Home
+                    i.fas.fa-chevron-right.fa-xs
+
+            .open-post
+                .open-post__column
+                    h5.open-post__title #Chic
+                    h6.open-post__hashtags #chicken#cute#friends
+                    .open-post__members
+                        img(src='public/images/3727908.png')
+                        span.open-post__member-count 702 members
+                        .divider
+                        span.open-post__member-status Active
+
+                .open-post__column
+                    .open-post__photo
+                        img(src='public/images/378851.png')
+                        .open-post__heart-count
+                            i.fas.fa-heart.fa-xs
+                            span 326
+    include partials/nav

@@ -1,0 +1,26 @@
+.badge {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.little-notification {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}

@@ -1,0 +1,42 @@
+extends base
+block content
+    header.screen-header
+        h1.screen-header__title More
+        .screen-header__icons
+            span
+                i.fas.fa-search.fa-lg
+            span
+                i.fas.fa-music.fa-lg
+            span.cog
+                a(href='setting')
+                    i.fas.fa-cog.fa-lg
+                span.little-notification
+
+    main.main-screen.more-screen
+        .user-component
+            .user-component__column
+                img.user-component__avatar.user-component__avatar--sm(src='public/images/478922.png')
+                .user-component__text
+                    h4.user-component__title GOOGOO
+                    h6.user-component__subtitle +82 10-123-4567
+                        i.fa-solid.fa-exclamation
+
+            .user-component__column
+                i.far.fa-comment-alt.fa-2x
+
+        .icon-row
+            each icon in ['fa-calendar', 'fa-box-archive', 'fa-face-smile', 'fa-brush', 'fa-share-nodes', 'fa-comments']
+                .icon-row__icon
+                    i(class=`fas ${icon}`)
+                    span
+                    //- 아이콘에 따른 텍스트 출력
+                    | #{icon === 'fa-calendar' ? 'Calendar' : icon === 'fa-box-archive' ? 'Talk Drive' : icon === 'fa-face-smile' ? 'Emoticons' : icon === 'fa-brush' ? 'Themes' : icon === 'fa-share-nodes' ? 'Account' : 'Openchat'}
+
+        .more-suggestions
+            h4.more-suggestions__title Suggestions
+            .more-suggestions__icons
+                .more-suggestions__icon
+                    .more-suggestions__icon-image
+                        i.fas.fa-quote-right
+                    span.more-suggestions__icon-text Cocoa Story
+    include partials/nav

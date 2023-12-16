@@ -1,0 +1,46 @@
+extends base
+block content
+    header.alt-header
+        .alt-header__column
+            a(href='../chats')
+                i.fas.fa-angle-left.fa-2x
+        .alt-header__column
+            h1.alt-header__title GOOGOO
+        .alt-header__column
+            span
+                i.fas.fa-search.fa-lg
+            span
+                i.fas.fa-bars.fa-lg
+
+    main.main-screen.main-chat
+        .chat__timestamp
+            | Sunday, January 1, 2023
+        .message-row
+            img(src='../public/images/3727908.png')
+            .message-row__content
+                span.message__author #{nickName}
+                .message__info
+                    span.message__bubble Hi!
+                    span.message__time 13:05
+        .message-row.message-row--own
+            .message-row__content
+                .message__info
+                    span.message__bubble helldtdtdrtdtro
+                    span.message__time 13:07
+        .message-row
+            img(src='../public/images/3727908.png')
+            .message-row__content
+                span.message__author #{nickName}
+                .message__info
+                    span.message__bubble Please Check My Cocoa Account Info.
+                    span.message__time 13:10 
+                    //이런것도 다 보내온 정보에서 수정
+
+    form.reply
+        .reply__column
+            i.fa-regular.fa-square-plus.fa-lg
+        .reply__column
+            input(type='text', placeholder='write a message ...')
+            i.far.fa-smile-wink.fa-lg   
+            button
+                i.fas.fa-arrow-up

@@ -1,0 +1,28 @@
+extends base
+block content
+    header.alt-header
+        .alt-header__column
+            a(href='more')
+                i.fas.fa-angle-left.fa-2x
+        .alt-header__column
+            h1.alt-header__title Settings
+        .alt-header__column
+            i.fas.fa-search.fa-lg
+
+    main.main-screen.more-screen
+        ul.settings-list
+            li.settings__setting
+                .settings__setting-column
+                    i.fas.fa-bullhorn
+                    span Notices
+                .settings__setting-column
+            li.settings__setting
+                .settings__setting-column
+                    i.fas.fa-flask
+                    span Cocoa Lab
+                .settings__setting-column
+            li.settings__setting
+                .settings__setting-column
+                    i.fas.fa-info-circle
+                    span Version
+                .settings__setting-column Latest Version

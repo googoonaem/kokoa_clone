@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+
+@import "reset.css";
+@import "variables.css";
+
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+
+/* screens */
+@import "screens/home.css";
+@import "screens/friends.css";
+
 body {
-    background-color: rgb(182, 172, 190);
+    font-family: 'Mukta', sans-serif;
+    color:#2e363e;
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
 }

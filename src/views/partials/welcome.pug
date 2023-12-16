@@ -1,0 +1,9 @@
+header.welcome-header 
+    h1.welcome-header__title Welcome to CocoaTalk 
+    p.welcome-header__text If you have a cocoa Account, login with your email or phone number.
+form#login-form(action="/friends", method="get")
+    input(type="text", name="username", placeholder="Email or phone number")
+    input(type="password", name="password", placeholder="password")
+    input.btn(type="submit", value="Log In")
+    button.btn Sign Up 
+    a(href="#") Find Cocoa Account or Password
